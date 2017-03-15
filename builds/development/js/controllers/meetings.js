@@ -17,15 +17,23 @@ myApp.controller('MeetingsController',
                     var meetingsRef = ref.child('users').child(authUser.uid).child('meetings');
                     var meetingsInfo = $firebaseArray(meetingsRef);
 
-                    $scope.addMeeting = function () {
+                    $scope.meetings = meetingsInfo;
+
+                    $scope.addMeeting = function() {
                         meetingsInfo.$add({
                             name: $scope.meetingname,
                             date: firebase.database.ServerValue.TIMESTAMP
                         }).then(function() {
-                            $scope.meetingname='';
+                            $scope.meetingname= null;
                         }); //promise
+                    } //addMeeting
 
-                    } // addMeeting
+
+                    $scope.deleteMeeting = function (key) {
+                        meetingsInfo.$remove(key);
+
+                    } //deleteMeeting
+
                 } //authUser
             }); //onAuthStateChanged
         }]); //myApp.controller

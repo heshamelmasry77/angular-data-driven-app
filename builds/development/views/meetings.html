@@ -2,25 +2,32 @@
 
     <div class="textintro">
         <h1>Add Meeting</h1>
-
+    <p>Type a meeting name and hit the +</p>
 
         <form class="formgroup addmeeting cf"
-        name="myform"
-        ng-submit="addMeeting()"
-        novalidate>
+              name="myform"
+              ng-submit="addMeeting()"
+              novalidate>
             <div class="inputwrapper">
                 <input type="text" name="meetingname"
-                placeholder="Meeting name"
-                ng-model="meetingname" ng-required="true">
-
+                       placeholder="Meeting name"
+                       ng-model="meetingname" ng-required="true">
             </div>
             <button type="submit" class="btn"
                     ng-disabled="myform.$invalid">+</button>
-
-
-
         </form>
 
     </div>
 </div>
 <!-- meetings cf -->
+
+<div class="card meetings cf">
+    <h2>Your Meetings</h2>
+    <div class="meeting" ng-repeat="(key, meeting) in meetings">
+        <button class="btn btn-delete tooltip"
+            ng-click="deleteMeeting(key)"><span>Delete this meeting</span>
+        </button>
+        <span class="text">{{meeting.name}}</span>
+    </div> <!-- meetings list -->
+</div><!-- meetings cf -->
+
