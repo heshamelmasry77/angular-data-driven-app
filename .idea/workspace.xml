@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0df0dc7e-2bd1-4c11-8670-480398c7560a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/builds/development/js/controllers/success.js" afterPath="$PROJECT_DIR$/builds/development/js/controllers/meetings.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/builds/development/views/success.html" afterPath="$PROJECT_DIR$/builds/development/views/meetings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/development/index.html" afterPath="$PROJECT_DIR$/builds/development/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/development/js/app.js" afterPath="$PROJECT_DIR$/builds/development/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/development/js/services/authentication.js" afterPath="$PROJECT_DIR$/builds/development/js/services/authentication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/development/views/meetings.html" afterPath="$PROJECT_DIR$/builds/development/views/meetings.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/development/js/services/authentication.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -75,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meetings.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meetings.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builds/development/views/meetings.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -96,9 +91,9 @@
         <option value="$PROJECT_DIR$/builds/development/css/style.css" />
         <option value="$PROJECT_DIR$/builds/development/index.html" />
         <option value="$PROJECT_DIR$/builds/development/js/controllers/meetings.js" />
-        <option value="$PROJECT_DIR$/builds/development/views/meetings.html" />
         <option value="$PROJECT_DIR$/builds/development/js/app.js" />
         <option value="$PROJECT_DIR$/builds/development/js/services/authentication.js" />
+        <option value="$PROJECT_DIR$/builds/development/views/meetings.html" />
       </list>
     </option>
   </component>
@@ -379,12 +374,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489571609546</updated>
-      <workItem from="1489571611015" duration="748000" />
+      <workItem from="1489571611015" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="748000" />
+    <option name="totallyTimeSpent" value="1201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -445,14 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builds/development/views/meetings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/builds/development/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -465,6 +452,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builds/development/views/meetings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
