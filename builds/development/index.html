@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Angular Registration</title>
+    <title>Angular Data</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
@@ -11,17 +11,16 @@
     <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
     <script src="https://code.angularjs.org/1.6.1/angular-animate.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
 
-
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyAoQAM_gQkAX5r0JRZE4iflWxoR6rotgLE",
-            authDomain: "angularregistration-b6749.firebaseapp.com",
-            databaseURL: "https://angularregistration-b6749.firebaseio.com",
-            storageBucket: "angularregistration-b6749.appspot.com",
-            messagingSenderId: "447117759530"
+            apiKey: "AIzaSyA7jNVxyIl26QlS-Go4pIo-tq9lFO-SBPA",
+            authDomain: "angulardata-3a410.firebaseapp.com",
+            databaseURL: "https://angulardata-3a410.firebaseio.com",
+            storageBucket: "angulardata-3a410.appspot.com",
+            messagingSenderId: "15357195314"
         };
         firebase.initializeApp(config);
     </script>
@@ -33,30 +32,30 @@
     <!-- CALLING MY Authentication SERVICE -->
     <script src="js/services/authentication.js"></script>
     <script src="js/controllers/registration.js"></script>
-    <script src="js/controllers/success.js"></script>
+    <script src="js/controllers/meetings.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- ng-include it allows you to include a document inside another document -->
-        <!-- You actually need to put another set of single quotes right here, and then paste the item that you want to include. -->
-        <nav class="cf" ng-include="'views/nav.html'">
+<header>
+    <!-- ng-include it allows you to include a document inside another document -->
+    <!-- You actually need to put another set of single quotes right here, and then paste the item that you want to include. -->
+    <nav class="cf" ng-include="'views/nav.html'">
 
-        </nav>
-    </header>
-    <div class="page">
+    </nav>
+</header>
+<div class="page">
 
-        <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+    <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
 
-            <span class="userinfo"> Hi {{ currentUser.firstname }} </span>
-            <a ng-href="#/login" ng-click="logout()">Logout</a>
-            </a>
-        </div>
-        <main class="cf" ng-view>
-
-        </main>
-
+        <span class="userinfo"> Hi {{ currentUser.firstname }} </span>
+        <a ng-href="#/login" ng-click="logout()">Logout</a>
+        </a>
     </div>
+    <main class="cf" ng-view>
+
+    </main>
+
+</div>
 </body>
 
 </html>
